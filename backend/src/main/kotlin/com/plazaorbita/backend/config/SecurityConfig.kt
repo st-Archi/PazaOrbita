@@ -29,8 +29,9 @@ class SecurityConfig(private val jwtAuthFilter: JwtAuthFilter) {
 
     @Bean
     fun corsConfigurationSource(): CorsConfigurationSource {
+        val origins = allowedOrigins.split(",").map { it.trim() }
         val config = CorsConfiguration().apply {
-            allowedOriginPatterns = allowedOrigins.split(",").map { it.trim() }
+            allowedOriginPatterns = origins
             allowedMethods = listOf("GET", "POST", "PUT", "DELETE", "OPTIONS")
             allowedHeaders = listOf("*")
         }
