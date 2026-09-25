@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Este manifest solo se fusiona en builds DEBUG (Gradle lo hace automático por la carpeta
+    src/debug/). Permite tráfico HTTP sin cifrar únicamente para poder probar contra
+    http://10.0.2.2:8080 (tu backend local en el emulador). El manifest principal
+    (src/main/AndroidManifest.xml), que es el que se usa en el APK de release/producción,
+    NO tiene este permiso, así que la app publicada exige HTTPS.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:usesCleartextTraffic="true" />
+</manifest>

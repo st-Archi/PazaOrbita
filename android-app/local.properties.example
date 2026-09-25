@@ -1,0 +1,9 @@
+# Copia este archivo como "local.properties" en esta misma carpeta (android-app/).
+# local.properties YA está en .gitignore: nunca se sube a GitHub.
+# El SDK de Android también guarda aquí la ruta a sdk.dir; Android Studio la agrega solo.
+
+# URL para builds DEBUG (emulador hablando con tu backend local)
+DEBUG_BASE_URL=http://10.0.2.2:8080/
+
+# URL para builds RELEASE (tu backend ya desplegado en Render/Koyeb, DEBE ser https://)
+RELEASE_BASE_URL=https://tu-api-plaza-orbita.onrender.com/

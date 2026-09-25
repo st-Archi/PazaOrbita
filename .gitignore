@@ -1,0 +1,13 @@
+# --- Android / Gradle ---
+android-app/local.properties
+**/.gradle/
+**/build/
+*.iml
+.idea/
+
+# --- Backend / Spring Boot ---
+backend/build/
+backend/.gradle/
+
+# --- Sistema ---
+.DS_Store
